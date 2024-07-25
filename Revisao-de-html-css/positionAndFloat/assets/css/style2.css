@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* div{
+    float: right;
+    padding: 50px;
+}
+
+.div1{
+    background: red;
+}
+
+.div2{
+    background: yellow;
+}
+
+.div3{
+    background: greenyellow;
+} */
+
+
+/*Clear*/
+
+/*
+Quando usamos a floatpropriedade e queremos o próximo elemento abaixo (não à direita ou à esquerda), teremos que usar a clear propriedade.
+
+A clearpropriedade especifica o que deve acontecer com o elemento que está próximo de um elemento flutuante.
+
+A clearpropriedade pode ter um dos seguintes valores:
+
+none- O elemento não é empurrado abaixo dos elementos flutuantes à esquerda ou à direita. Este é o padrão
+left- O elemento é empurrado abaixo dos elementos flutuantes à esquerda
+right- O elemento é empurrado abaixo dos elementos flutuantes à direita
+both- O elemento é empurrado para baixo dos elementos flutuantes esquerdo e direito
+inherit- O elemento herda o valor clear do seu pai
+Ao limpar floats, você deve combinar clear com float: Se um elemento estiver flutuando para a esquerda, você deve limpar para a esquerda. Seu elemento flutuado continuará flutuando, mas o elemento limpo aparecerá abaixo dele na página da web.
+*/
+
+div{
+    float: right;
+    padding: 50px;
+}
+
+.div1{
+    background: red;
+    float: left;
+}
+
+.div2{
+    background: yellow;
+    clear: left;
+}
+
+.div3{
+    background: greenyellow;
+}

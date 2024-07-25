@@ -1,0 +1,36 @@
+@charset "UUTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+body{
+    background-image: linear-gradient(to left, #8601E6, #1A1423);
+}
+
+main{
+    background-color: #F7F0F5;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #fde12d80;
+    width: 660px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    color: #8601E6;
+    text-align: center;
+    text-shadow: 1px 1px 2px #51018b96;
+}
+
+h2{
+    color: #FDE12D;
+}
+
+p{
+    text-align: justify;
+}
+
+/* Adobbe #E6D500  #2A00E5 #B500E6 #6E00E6*/
+/*Coolor 8601E6 F7F0F5 (E0CA3C ou FDE12D) 000000 #1A1423*/

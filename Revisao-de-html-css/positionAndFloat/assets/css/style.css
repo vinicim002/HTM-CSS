@@ -1,0 +1,125 @@
+body {
+    background-color: darkgray;
+    margin: 0px;
+    padding: 0px;
+    height: 180vh;
+    width: 240vh;
+}
+
+/*Static*/
+
+/*
+O position static, que em português significa estático, é o mais utilizado de todos, pois, como dito acima, trata-se do valor que já vem por padrão quando criamos elementos no HTML. Seu comportamento, como o nome sugere, é ser estático. Ele apenas segue o fluxo junto dos outros elementos da página normalmente, tendo o canto superior esquerdo como referência.
+
+OBS: Este elemento não aceita as propriedades auxiliares top, bottom, left e right
+*/
+
+  /*.pai {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    position: static;
+    top: 20px; NESSE CASO NAO ACONTECEU NADA POIS QUANDO TRABALHAMOS COM A POSITION EM STATIC ELA POR PADRAO NAO ACEITA NENHUMAA PORPIEDADE COMO TOP, BOTTOM.... 
+} */
+ 
+  /* .filho {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+  } */
+
+
+/*Fixed*/
+
+/*
+O position fixed, que em português significa fixo, faz com que o elemento que recebeu esta propriedade não se mova na tela. Mesmo que uma página tenha rolamento (scroll). Ao utilizarmos o rolamento para esquerda e direita, ou para cima e para baixo, o elemento não se move
+*/
+
+  /* .pai2 {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    position: fixed;
+    right: 5%;
+    bottom: 0%;
+}
+  .filho2{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+  } */
+
+
+/*Sticky*/
+
+/*
+O position sticky, que em português significa pegajoso ou colado, é parecido com o fixed, porém a sua diferença é que, em vez dele ficar fixo em relação à tela, ele fica fixo em relação ao rolamento da página.
+
+Este tipo de position é utilizado sempre em conjunto das propriedades auxiliares, pois precisa de um posicionamento de referência
+*/
+
+/* .pai3 {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 200px 0 0 200px;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+}
+  .filho3{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+  } */
+
+
+/*Relative*/
+
+/*
+O position relative, que em português significa relativo, é usado quando queremos alterar a posição de um elemento tendo como referência a posição inicial dele. Ao aplicarmos essa propriedade em um elemento, ele não muda de posição, pois já vai estar posicionado em sua posição de referência.
+*/
+
+  /* .pai4 {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 150px;
+}
+  .filho4{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: relative;
+    top: 50px;
+    left: 50px;
+  } */
+
+
+/*Absolute*/
+
+/*
+Position absolute, ou posicionamento absoluto em português, possui dois comportamentos diferentes. O primeiro é quando o elemento com essa propriedade possui um elemento pai de valor diferente de static. Neste caso, ele terá este elemento pai como referência para ser posicionado. Todo elemento pai que tiver qualquer valor de position, menos o static, será a referência para posicionar o elemento filho absolute!
+
+O segundo comportamento é quando o elemento com position absolute não tem elemento pai, ou este elemento pai possui position static. Nesta situação, ele irá ignorar estes elementos e será posicionado a partir do canto esquerdo superior do documento, podendo até mesmo sobrepor a eles. Ou seja, é importante utilizar o absolute tendo certeza da necessidade do seu uso (não que isso não seja necessário para os outros valores), pois ele pode desalinhar o layout da página.
+*/
+
+
+.pai5{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 250px;
+}
+  .filho5{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+  }
+
+
+
+

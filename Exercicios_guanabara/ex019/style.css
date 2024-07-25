@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*
+    Em HTML eh id = em CSS eh # (so pode um elemento)
+    Em HTML eh class = em CSS eh . (pode varios elementos)
+*/
+
+body{
+    background-color: rgb(190, 238, 190);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(1, 129, 1);
+}
+
+/*Seletor personalizado*/
+#principal{
+    text-align: center;
+    background-color: rgb(1, 129, 1);
+    color: white;
+}
+
+h2{
+    color: rgb(77, 124, 77);
+}
+
+.basico{
+    color: rgb(77, 124, 77);
+    font-weight: bold;
+}
+
+.intermediario{
+   color: rgb(133, 121, 56); 
+}
+
+.avancado{
+    color: rgb(124, 77, 77);
+}
+
+.destaque{
+    background-color: rgba(148, 148, 55, 0.63);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        /*Faco uma caracterização global*/
+        div.quadrado{
+            /*Esse display serve para dizer que o elemento e exibido em linha*/
+            display: inline-block;
+            background-color: darkgray;
+            /*Serve para dar contorno*/
+            border: 2px solid black;
+            /*Serve para arredondar*/
+            border-radius: 10px;
+            /*Altura*/
+            height: 300px;
+            /*Largura*/
+            width: 300px;
+        }
+
+        /*Faco a caracterização de cada quadrado separadamente*/
+        div#q1{
+            background-image: url('imagens/pattern001.png');
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, orange);
+        }
+        div#q3{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
