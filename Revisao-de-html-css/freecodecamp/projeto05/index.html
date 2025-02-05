@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bem-vindo ao formulário do DEV</h1>
+    <h1 id="title">Bem-vindo ao formulário do DEV</h1>
 
     <p id="description">Esse forms foi feito para concluir um "projeto de conclusão" do freeCodeCamp</p>
 
     <form action="#" method="post" id="survey-form">
         <!--Dados pessoais-->
         <fieldset>
-            <label for="name-label">Nome:</label>
-            <input type="text" id="name-label" placeholder="Digite seu nome">
+            <label for="name" id="name-label">Nome:</label>
+            <input type="text" id="name" placeholder="Digite seu nome" required>
 
-            <label for="email-label">Email:</label>
-            <input type="email" id="email-label" placeholder="Digite seu email">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="Digite seu email" required>
 
-            <label for="number-label">Idade:</label>
-            <input type="number" id="number-label" min="13" max="120" placeholder="Digite sua idade">
+            <label for="number" id="number-label">Idade:</label>
+            <input type="number" id="number" min="13" max="120" placeholder="Digite sua idade" required>
 
             <!--Dropdowne 1-->
             <label>Qual opção melhor descreve sua função atual?</label>
-            <select name="dropdowne" class="dropdowne">
+            <select name="dropdowne" class="dropdown-designer" id="dropdown">
                 <option value="">Selecione</option>
                 <option value="1">Estudante</option>
                 <option value="2">outro</option>
@@ -44,7 +44,7 @@
 
             <!--Dropdowne 2-->
             <label>Qual é o seu recurso favorito para aprender a programar?</label>
-            <select name="dropdowne" class="dropdowne">
+            <select name="dropdowne" class="dropdown-designer">
                 <option value="">Selecione</option>
                 <option value="1">Livro</option>
                 <option value="2">YouTube</option>
@@ -61,7 +61,7 @@
 
             <!--Textarea-->
             <label for="descricao">Algum comentário ou sugestão?</label>
-            <textarea name="descricao" id="descricao" rows="3" cols="30" placeholder="Fale um pouo de voce"></textarea>
+            <textarea name="descricao" id="descricao" rows="3" cols="30" placeholder="Fale um pouco sobre você"></textarea>
         </fieldset>
 
         <input type="submit" value="Enviar" id="submit">
