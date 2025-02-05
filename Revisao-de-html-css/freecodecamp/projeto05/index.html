@@ -34,16 +34,17 @@
 
         <fieldset>
             <!--Radio bottom-->
-            <fieldset>
-                <legend>Você teve dificuldade para programar logo no início?</legend>
-                <label for="option1">Sim</label>
-                <input type="radio" id="option1" name="option" value="sim" checked>
-                <label for="option2">Nao</label>
-                <input type="radio" id="option2" value="nao" name="option">
+            <fieldset id="fieldsetRadio">
+                <label>Você teve dificuldade para programar logo no início?</label>
+            
+                <label for="option1"><input type="radio" id="option1" name="option" value="sim" class="inline" checked> Sim</label>
+                
+                <label for="option2"><input type="radio" id="option2" value="nao" name="option" class="inline"> Nao</label>
             </fieldset>
 
             <!--Dropdowne 2-->
             <label>Qual é o seu recurso favorito para aprender a programar?</label>
+
             <select name="dropdowne" class="dropdown-designer">
                 <option value="">Selecione</option>
                 <option value="1">Livro</option>
@@ -52,16 +53,16 @@
 
             <!--Checkbox-->
             <label>Quais áreas vocês querem seguir? (Marque todas as opções aplicáveis)</label>
-            <label for="front">Front-end</label>
-            <input type="checkbox" name="area" value="Front-end" id="front">
-            <label for="back">Back-end</label>
-            <input type="checkbox" name="area" value="Back-end" id="back">
-            <label for="full">FullStack</label>
-            <input type="checkbox" name="area" value="FullStack" id="full">
 
+            <label for="front"><input type="checkbox" name="area" value="Front-end" id="front" class="inline"> Front-end</label>
+            
+            <label for="back"><input type="checkbox" name="area" value="Back-end" id="back" class="inline"> Back-end</label>
+            
+            <label for="full"><input type="checkbox" name="area" value="FullStack" id="full" class="inline"> FullStack</label>
+            
             <!--Textarea-->
             <label for="descricao">Algum comentário ou sugestão?</label>
-            <textarea name="descricao" id="descricao" rows="3" cols="30" placeholder="Fale um pouco sobre você"></textarea>
+            <textarea name="descricao" id="descricao" placeholder="Fale um pouco sobre você"></textarea>
         </fieldset>
 
         <input type="submit" value="Enviar" id="submit">
