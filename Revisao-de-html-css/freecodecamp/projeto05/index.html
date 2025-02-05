@@ -11,38 +11,60 @@
 
     <p id="description">Esse forms foi feito para concluir um "projeto de conclusão" do freeCodeCamp</p>
 
-    <form action="" method="post" id="survey-form">
+    <form action="#" method="post" id="survey-form">
+        <!--Dados pessoais-->
         <fieldset>
-            <label for="name-label">Nome: <input type="text" id="name-label" placeholder="Digite seu nome"></label>
+            <label for="name-label">Nome:</label>
+            <input type="text" id="name-label" placeholder="Digite seu nome">
 
-            <label for="email-label">Email: <input type="email-label" id="email" placeholder="Digite seu email"></label>
+            <label for="email-label">Email:</label>
+            <input type="email" id="email-label" placeholder="Digite seu email">
 
-            <label for="number-label">Idade: <input type="number-label" id="number" min="13" max="120" placeholder="Digite sua idade"></label>
+            <label for="number-label">Idade:</label>
+            <input type="number" id="number-label" min="13" max="120" placeholder="Digite sua idade">
 
-            <label for="">Qual opção melhor descreve sua função atual?
-                <select name="dropdowne " id="dropdowne ">
-                    <option value="">Estudante</option>
-                    <option value="1">outro</option>
-                </select>
-            </label>
+            <!--Dropdowne 1-->
+            <label>Qual opção melhor descreve sua função atual?</label>
+            <select name="dropdowne" class="dropdowne">
+                <option value="">Selecione</option>
+                <option value="1">Estudante</option>
+                <option value="2">outro</option>
+            </select>
         </fieldset>
 
         <fieldset>
-            <legend>Você teve dificuldade para programar logo no início?</legend>
-            <label for="option1"><input type="radio" id="option1" name="option" checked>Sim</label>
-            <label for="option2"><input type="radio" id="option2" name="option">Nao</label>
+            <!--Radio bottom-->
+            <fieldset>
+                <legend>Você teve dificuldade para programar logo no início?</legend>
+                <label for="option1">Sim</label>
+                <input type="radio" id="option1" name="option" value="sim" checked>
+                <label for="option2">Nao</label>
+                <input type="radio" id="option2" value="nao" name="option">
+            </fieldset>
+
+            <!--Dropdowne 2-->
+            <label>Qual é o seu recurso favorito para aprender a programar?</label>
+            <select name="dropdowne" class="dropdowne">
+                <option value="">Selecione</option>
+                <option value="1">Livro</option>
+                <option value="2">YouTube</option>
+            </select>
+
+            <!--Checkbox-->
+            <label>Quais áreas vocês querem seguir? (Marque todas as opções aplicáveis)</label>
+            <label for="front">Front-end</label>
+            <input type="checkbox" name="area" value="Front-end" id="front">
+            <label for="back">Back-end</label>
+            <input type="checkbox" name="area" value="Back-end" id="back">
+            <label for="full">FullStack</label>
+            <input type="checkbox" name="area" value="FullStack" id="full">
+
+            <!--Textarea-->
+            <label for="descricao">Algum comentário ou sugestão?</label>
+            <textarea name="descricao" id="descricao" rows="3" cols="30" placeholder="Fale um pouo de voce"></textarea>
         </fieldset>
 
-        <fieldset>
-            <label for="">Qual é o seu recurso favorito para aprender a programar?
-                <select name="dropdowne " id="dropdowne ">
-                    <option value="">Livro</option>
-                    <option value="1">YouTube</option>
-                </select>
-            </label>
-
-            <label for=""></label>
-        </fieldset>
+        <input type="submit" value="Enviar" id="submit">
     </form>
 </body>
 </html>
