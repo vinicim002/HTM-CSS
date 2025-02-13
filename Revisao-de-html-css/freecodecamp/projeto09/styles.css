@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedan+SC&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: white;
+    margin: 2rem 1rem;
+}
+
+main{
+    background-color: aquamarine;
+}
+
+#title{
+    font-family: "Sedan SC", serif;
+    font-size: 3.6rem;
+    text-align: center;
+}
