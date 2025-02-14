@@ -8,12 +8,12 @@
 }
 
 body {
-    background-color: white;
-    color: brown;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 main{
-    background-color: aquamarine;
+    background-color: #eeeeee;
     margin: 3rem 1rem;
     padding: 1.5rem;
 }
