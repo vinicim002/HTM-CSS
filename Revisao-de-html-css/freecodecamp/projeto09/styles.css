@@ -2,12 +2,13 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
     font-family: "Open-Sans", sans-serif;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
+    margin: 0;
     background-color: #ffffff;
     color: #000000;
 }
@@ -16,6 +17,7 @@ main{
     background-color: #eeeeee;
     margin: 3rem 1rem;
     padding: 1.5rem;
+    border-radius: 1rem;
 }
 
 #title{
@@ -38,14 +40,17 @@ main{
     margin: 0;
     background-color: white;
     max-height: 70rem;
+    border-radius: 1rem;
 }
 
 img {
     display: block;
     max-width: 100%;
-    height: 500px;
-    object-fit: contain;
+    max-height: 500px;
+    height: auto;
+    object-fit: cover;
     margin: 0 auto;
+    border-radius: 1rem;
 }
 
 #img-caption {
@@ -62,3 +67,114 @@ img {
     margin: 5rem 0;
     text-align: center;
 }
+
+#tribute-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    max-width: 70rem;
+    line-height: 3rem;
+}
+
+ul > li {
+    font-size: 1.6rem;
+    font-weight: normal;
+    
+    margin: 1.6rem 0;
+}
+
+ul > li > span {
+    font-size: inherit;
+    font-weight: bold;
+}
+
+#galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 1.6rem;
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 20px 10px;
+    
+}
+
+#galeria h3 {
+    flex-basis: 100%;
+}
+
+#galeria .imagemEfeito {
+        width: 100%;
+        max-width: 35rem;
+        height: 50rem;
+        object-fit: cover;
+        border-radius: 1rem;
+        margin: 0;
+}
+
+#galeria::after {
+    content: "";
+    width: 35rem;
+    height: 50rem;
+}
+
+h3#rede {
+    font-size: 2rem;
+}
+
+h3#rede > a {
+    font-size: 2rem;
+    color: #477ca7;
+}
+
+/*-Tentativa-*/
+
+.container {
+    position: relative;
+  }
+  
+  .imagemEfeito {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .container:hover .imagemEfeito {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+  a .nome{
+    background-color: #30bdbd;
+    text-align: center;
+    padding: 1.6rem 3.2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 1rem;
+  }
+
+  .middle a {
+    text-decoration: none;
+  }
