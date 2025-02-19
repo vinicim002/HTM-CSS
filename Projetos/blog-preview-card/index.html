@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+  <div id="main">
+    <div id="img">
+      <img src="assets/images/illustration-article.svg" alt="">
+    </div>
 
-  Learning
+    <div id="conteudo">
+      <span>Learning</span>
+      <p id="data">Published 21 Dec 2023</p>
+      <h1>HTML & CSS foundations</h1>
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </div>
 
-  Published 21 Dec 2023
+    <div id="footer">
+      <img src="assets/images/image-avatar.webp" alt="">
+      <p>Greg Hooper</p>
+    </div>
 
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
 </body>
 </html>
