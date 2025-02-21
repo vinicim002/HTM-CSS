@@ -22,20 +22,20 @@
 
 body {
     background-color: var(--stone-100);
-    width: 100%;
+    min-width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 5rem 0;
+    padding: 8rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-family: "Young Serif", serif;
     color: var(--Brown-800);
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin: 0.5rem 0;
 }
 
 ul, ol {
@@ -44,10 +44,11 @@ ul, ol {
     list-style-position: outside;
 }
 li {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
     font-weight: 400;
     color: var(--stone-900);
+    padding-left: 2rem;
     
 }
 
@@ -55,12 +56,12 @@ li::marker {
     color: var(--Brown-800);
     font-weight: bold;
     margin-right: 2rem;
-    font-size: 1rem;
+    font-size: 1.6rem;
     
 }
 
 ol li::marker {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 ol li {
@@ -81,14 +82,14 @@ span.bold {
 div#main {
     background-color: var(--white);
     width: 100%;
-    max-width: 50rem;
+    max-width: 70rem;
     height: fit-content;
     padding: 3rem;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 2rem;
+    row-gap: 1.6rem;
     border-radius: 1rem;
 }
 
@@ -104,14 +105,14 @@ div#img img {
 }
 
 div#descricao h1{
-    font-size: 2.6rem;
+    font-size: 3.6rem;
     font-family: "Young Serif", serif;
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 div#descricao p{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: "Outfit", serif;
     font-weight: 400;
     color: var(--stone-900);
@@ -123,9 +124,9 @@ div#preparo {
 }
 
 div#preparo h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: var(--Rose-800);
-    margin-bottom: 0.6rem;
+    margin: 0.5rem 0;
 }
 
 table {
@@ -136,8 +137,8 @@ table {
 table caption {
    text-align: left;
    color: var(--stone-900);
-   font-size: 1.2rem;
-   margin-bottom: 1rem;
+   font-size: 1.6rem;
+   margin: 2rem 0;
 }
 
 tr{
@@ -158,6 +159,10 @@ td{
     width: 50%;
     font-weight: bold;
     color: var(--Brown-800);
+}
+
+th, td {
+    font-size: 1.6rem;
 }
 
 tr:last-child{
