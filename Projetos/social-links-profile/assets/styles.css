@@ -7,7 +7,7 @@
 :root {
     font-size: 62.5%;
     font-family: "Inter", serif;
-    height: 100vh;
+    min-height: 100vh;
 
     --green: hsl(75, 94%, 57%);
     --white: hsl(0, 0%, 100%);
@@ -100,6 +100,7 @@ div.botao {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 div.botao a {
@@ -112,8 +113,7 @@ div.botao:hover {
     background-color: var(--green);
 }
 
-div.botao:hover a{
-    background-color: var(--green);
+div.botao:hover a {
     color: var(--grey-900);
 }
 
