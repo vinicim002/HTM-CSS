@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: "Inter", serif;
+    height: 100vh;
+
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--grey-900);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#main {
+    background-color: var(--grey-800);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 35rem;
+    height: fit-content;
+    padding: 2rem 3.5rem;
+    margin-bottom: 2rem;
+    border-radius: 1.5rem;
+}
+
+h1, p, a {
+    color: var(--white);
+}
+
+div#perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#perfil img {
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+    border-radius: 100%;
+    margin: 2rem 0;
+}
+
+div#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#info h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+div#info h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--green);
+}
+
+div#info p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white);
+    margin: 2rem 0;
+}
+
+div#redes {
+    width: 100%;
+}
+
+div.botao {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--grey-700);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+div.botao a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+div.botao:hover {
+    background-color: var(--green);
+}
+
+div.botao:hover a{
+    background-color: var(--green);
+    color: var(--grey-900);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
