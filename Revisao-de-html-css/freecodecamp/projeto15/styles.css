@@ -40,7 +40,7 @@ h3 {
 body{
     display: grid;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 #header {
@@ -155,5 +155,180 @@ a {
 }
 
 main {
-    margin: 0 14.4rem;
-}       
+    display: grid;
+    padding: 0 14.4rem;
+    height: 100%;
+    /* width: 100%; */
+}     
+
+#secao-video {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+    width: 100%;
+    padding: 5rem 0;
+    margin-bottom: 5rem;
+}
+
+#video-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: 2rem;
+    width: 100%;
+}
+
+iframe#video {
+    width: 100%;
+    max-width: 66.2rem;
+    height: 38.6rem;
+}
+
+figcaption {
+    width: 70rem;
+    height: 8rem;
+    background-color: var(--fonte-color-01);
+
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: var(--bg-color);
+    text-align: center;
+
+    padding: 2rem;
+    border-radius: 2.5rem;
+}
+
+#especialidades-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 2rem;
+}
+
+.especialidade {
+    display: flex;
+    flex-direction: column;
+}
+
+.especialidade h4 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.especialidade p {
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: var(--fonte-color-01);
+}
+
+.icons-especialidades {
+    width: 6rem;
+}
+
+#masculino, #feminino {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+#masculino h3, #feminino h3{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); /* Ajuste responsivo */
+    gap: 2rem; /* Espaçamento mais fluido */
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+.produto img {
+    width: 100%;
+    max-width: 27rem;
+    max-height: 25rem;
+    aspect-ratio: 1 / 1; /* Mantém a proporção quadrada */
+    object-fit: cover;
+}
+
+.produto h5 {
+    font-size: 1.8rem;
+    opacity: 0.9; /* Melhora a legibilidade sem perder a estética */
+}
+
+.produto p {
+    font-size: 1.8rem;
+    opacity: 0.9; /* Melhora a legibilidade sem perder a estética */
+    color: var(--fonte-color-01);
+}
+
+#secao-form {
+    display: grid;
+    place-content: center;
+    grid-template-columns: auto;
+    row-gap: 2rem;
+    background-color: var(--fonte-color-01);
+    width: 100%;
+    max-width: 70rem;
+    height: 25rem;
+    border-radius: 2.5rem;
+
+    /* Centraliza horizontalmente */
+    margin: 10rem auto;
+}
+
+#secao-form h3{
+    color: var(--bg-color);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+input#email {
+    background-color: var(--input-color);
+    width: 56.4rem;
+    height: 6.4rem;
+    border-radius: 2.5rem;
+    padding: 2rem;
+    border: none;
+}
+
+input#submit {
+    width: 13.4rem;
+    height: 4.7rem;
+    background-color: var(--input-color);
+    border-radius: 2.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    display: grid;
+    place-content: center;
+    background-color: var(--fonte-color-01);
+    width: 100%;
+    height: 15.2rem;
+}
+
+footer a {
+    color: var(--bg-color);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
