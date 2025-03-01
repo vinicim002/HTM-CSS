@@ -153,3 +153,7 @@ a {
     color: var(--fonte-color-01);
     font-weight: bold;
 }
+
+main {
+    margin: 0 14.4rem;
+}       
