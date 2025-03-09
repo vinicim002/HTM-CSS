@@ -185,17 +185,117 @@ section#inicio {
     height: 2.4rem;
 }
 
+/*Ultimos projetos*/
+.projeto-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    column-gap: 10rem;
+    margin-bottom: 15rem;
+}
 
+/*img*/
 #section-projetos{
     background: var(--primary-color-sec);
     width: 100%;
-    height: 100%;
     padding: 0 14.4rem 0 14.4rem;
     padding-top: 4rem;
 }
 
-.projeto-container h2 {
+#section-projetos h2 {
     font-size: 6rem;
     line-height: 66%;
     color: white;
+    margin-bottom: 15rem;
 }
+
+
+.moldura {
+    display: block;
+    width: 46.6rem;
+    height: 46.6rem;
+    background: transparent;
+    border: 2rem solid var(--second-color);
+    border-radius: 2.5rem;
+    position: relative;
+}
+
+.img-projeto {
+    display: block;
+    width: 46.6rem;
+    height: 46.6rem;
+    background: white;
+    border: 2rem solid var(--second-color);
+    border-radius: 2.5rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.img-projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*info*/
+
+.info-projeto-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-projeto {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.info-projeto h3 {
+    font-size: 3.6rem;
+    color: white;
+    line-height: 130%;
+}
+
+
+.info-projeto p {
+    font-size: 1.8rem;
+    color: white;
+    line-height: 150%;
+}
+
+table {
+    width: 100%;
+}
+
+th, td, table{
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    border-bottom: 1px solid white;
+    border-collapse: collapse;
+    padding: 1rem 0;
+}
+
+th{
+    text-align: left;
+}
+
+td {
+    text-align: right;
+}
+thead td {
+    text-align: left;
+}
+
+tr:hover {
+    background-color: var(--second-color);
+    color: white;
+}
+
+.info-projeto .buttons-home {
+    padding: 4rem 0;
+}
+
+
