@@ -265,6 +265,8 @@ section#inicio {
     line-height: 150%;
 }
 
+/*Tabela*/
+
 table {
     width: 100%;
 }
@@ -280,6 +282,7 @@ th, td, table{
 
 th{
     text-align: left;
+    font-weight: normal;
 }
 
 td {
@@ -294,8 +297,12 @@ tr:hover {
     color: white;
 }
 
+/*Botoes*/
+
 .info-projeto .buttons-home {
     padding: 4rem 0;
 }
+
+
 
 
