@@ -146,10 +146,11 @@ section#inicio {
     cursor: pointer;
 }
 
-    .button:hover {
-        background: transparent;
-        border: 2px solid var(--second-color);
-    }
+
+.button:hover {
+    background: transparent;
+    border: 1px solid var(--second-color);
+}
 
 
 .redes-sociais {
