@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Our superheroes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+      <script>
+        var header = document.querySelector("header");
+        var section = document.querySelector("section");
+
+
+        // Para começar, vamos armazenar a URL do JSON que queremos recuperar em uma variável. Adicione o seguinte na parte inferior do seu código JavaScript:
+
+        var requestURL =
+        "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
+
+        // Para criar uma solicitação, precisamos criar uma nova instância de objeto de solicitação a partir do construtor XMLHttpRequest usando a palavra-chave new. Adicione o seguinte abaixo sua última linha:
+
+        var request = new XMLHttpRequest();
+
+        // Agora precisamos abrir uma nova solicitação usando o método open() . Adicione a seguinte linha:
+
+        request.open("GET", requestURL);
+
+        // Em seguida, adicione as duas linhas a seguir — aqui estamos definindo o responseType como JSON, para que o XHR saiba que o servidor retornará o JSON e que isso deve ser convertido nos bastidores em um objeto JavaScript. Em seguida, enviamos a solicitação com o método send():
+
+        request.responseType = "json";
+        request.send();
+
+        // A última parte desta seção envolve aguardar a resposta retornar do servidor e, em seguida, lidar com ela. Adicione o seguinte código abaixo do seu código anterior:
+
+        request.onload = function () {
+            var superHeroes = request.response;
+            populateHeader(superHeroes);
+            showHeroes(superHeroes);
+        };
+
+        function populateHeader(jsonObj) {
+            var myH1 = document.createElement("h1");
+            myH1.textContent = jsonObj["squadName"];
+            header.appendChild(myH1);
+
+            var myPara = document.createElement("p");
+            myPara.textContent =
+                "Hometown: " + jsonObj["homeTown"] + " // Formed: " + jsonObj["formed"];
+            header.appendChild(myPara);
+        }
+
+        function showHeroes(jsonObj) {
+  var heroes = jsonObj["members"];
+
+  for (var i = 0; i < heroes.length; i++) {
+    var myArticle = document.createElement("article");
+    var myH2 = document.createElement("h2");
+    var myPara1 = document.createElement("p");
+    var myPara2 = document.createElement("p");
+    var myPara3 = document.createElement("p");
+    var myList = document.createElement("ul");
+
+    myH2.textContent = heroes[i].name;
+    myPara1.textContent = "Secret identity: " + heroes[i].secretIdentity;
+    myPara2.textContent = "Age: " + heroes[i].age;
+    myPara3.textContent = "Superpowers:";
+
+    var superPowers = heroes[i].powers;
+    for (var j = 0; j < superPowers.length; j++) {
+      var listItem = document.createElement("li");
+      listItem.textContent = superPowers[j];
+      myList.appendChild(listItem);
+    }
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myList);
+
+    section.appendChild(myArticle);
+  }
+}
+
+
+
+      </script>
+  </body>
+</html>
