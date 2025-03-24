@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- Caixa "mae" -->
+  <div class="container">
+
+    <!-- Caixa da esquerda -->
+    <div class="container-pontuacao">
+      <h1>Your Result</h1>
+
+      <!-- Bola de resultado -->
+      <div class="resultado">
+        <p id="media">76</p>
+        <p id="valorTotal">of 100</p>
+      </div>
+      
+      <!-- feedback -->
+      <div class="feedback">
+        <h2>Great</h2>
+        <p>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+    </div>
+
+    <!-- Caixa da direita -->
+    <div class="container-summary">
+      <h1>Summary</h1>
+
+      <!-- habilidades e pontuacao -->
+      <div class="summary">
+        <div class="habilidade">
+          <h3>Reaction</h3>
+          <span>80 / 100</span>
+        </div>
+
+        <div class="habilidade">
+          <h3>Memory</h3>
+          <span>92 / 100</span>
+        </div>
+
+        <div class="habilidade">
+          <h3>Verbal</h3>
+          <span>61 / 100</span>
+        </div>
+
+        <div class="habilidade">
+          <h3>Visual</h3>
+          <span>72 / 100</span>
+        </div>
+      </div>
+
+      <button>Continue</button>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
