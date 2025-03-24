@@ -34,7 +34,6 @@ window.addEventListener("DOMContentLoaded", () => {
         const valorTotaldaNota = document.createElement("span");
         const icon = document.createElement("img"); // Criar um ícone
 
-        // Corrige o caminho do ícone
         icon.src = `../assets/images/${data[index].icon.split("/").pop()}`;
         icon.alt = data[index].category;
         icon.classList.add("icon-habilidade"); // Classe para estilização

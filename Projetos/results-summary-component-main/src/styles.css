@@ -149,9 +149,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(248, 231, 231);
     width: 100%;
     padding: 1.5rem;
+    border-radius: 1rem;
 }
 
 .habilidade h3 {
