@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    /* ### Primary */
+    --lightRed: hsl(0, 100%, 67%);
+    --orangey-Yellow: hsl(39, 100%, 56%);
+    --greenTeal: hsl(166, 100%, 37%);
+    --cobaltblue: hsl(234, 85%, 45%);
+    /* ## Gradients */
+    --lightSlateBlueBackground: hsl(252, 100%, 67%);
+    --lightRoyalBlueBackground: hsl(241, 81%, 54%);
+    --violetBlueCircle: hsla(256, 72%, 46%, 1);
+    --persianBlueCircle: hsla(241, 72%, 46%, 0);
+    /* ### Neutral */
+    --white: hsl(0, 0%, 100%);
+    --paleBlue: hsl(221, 100%, 96%);
+    --lightLavender: hsl(241, 100%, 89%);
+    --darkGrayBlue: hsl(224, 30%, 27%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--paleBlue);
+    font-family: "Hanken Grotesk", sans-serif;
+    min-width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 60rem;
+    max-height: fit-content;
+
+    background-color: var(--white);
+    border-radius: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 6px 8px 20px 0px rgb(48, 59, 90, 0.25);;
+}
+
+
+/* Container da esquerda */
+
+.container-pontuacao {
+    background: linear-gradient(180deg, var(--lightSlateBlueBackground), var(--lightRoyalBlueBackground));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    width: 50%;
+    
+    border-radius: 2rem;
+    padding: 2.5rem;
+}
+
+.container-pontuacao h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--lightLavender);
+    font-weight: 500;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(180deg, var(--violetBlueCircle), var(--persianBlueCircle));
+
+    /* background-color: red; */
+    
+    border-radius: 50%;
+    width: 14rem;
+    height: 14rem;
+}
+
+.resultado #media {
+    font-size: 5rem;
+    color: var(--white);
+    font-weight: 800;
+}
+
+.resultado #valorTotal {
+    font-size: 1.2rem;
+    color: var(--lightLavender);
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.feedback h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.feedback p {
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--lightLavender);
+    padding: 0 3rem;
+}
+
+/* Container da direita */
+
+.container-summary {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 50%;
+    border-radius: 2rem;
+    padding: 2.5rem;
+}
+
+.container-summary h1 {
+    font-size: 1.8rem;
+    color: var(--darkGrayBlue);
+    font-weight: 800;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.habilidade {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 231, 231);
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.habilidade h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.habilidade span {
+    font-size: 1.4rem;
+}
+
+.notaTirada {
+    color: var(--darkGrayBlue);
+    font-weight: 800;
+}
+
+.valorTotaldaNota {
+    color: var(--darkGrayBlue);
+    font-weight: 500;
+}
+
+button {
+    background-color: var(--darkGrayBlue);
+    border: none;
+    border-radius: 2rem;
+    padding: 1.6rem;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(224, 30%, 40%);
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.habilidade-texto {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre ícone e texto */
+}
+
+.icon-habilidade {
+    width: 24px;
+    height: 24px;
+}
+
+
