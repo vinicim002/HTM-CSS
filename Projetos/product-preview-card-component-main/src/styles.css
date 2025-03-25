@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* ### Primary */
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+    /* ### Neutral */
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%)
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--cream);
+    min-width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+
+    width: 60rem;
+    height: fit-content;
+
+    border-radius: 1rem;
+    
+    margin-bottom: 2rem;
+}
+
+.container-esquerdo {
+    width: 50%;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 1rem 0 0 1rem;
+}
+
+.container-direito {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    width: 50%;
+    height: fit-content;
+    padding: 2rem 4rem 2rem 3rem;
+}
+
+.container-direito h2 {
+    color: var(--grey);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+.container-direito h1 {
+    color: var(--black);
+    font-size: 3.2rem;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+.container-direito p {
+    color: var(--grey);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.preco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.preco h2 {
+    color: var(--green-500);
+    font-size: 3.2rem;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+.preco h3 {
+    color: var(--grey);
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+
+    background-color: var(--green-500);
+    color: var(--white);
+
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    border-radius: 1rem;
+    border: none;
+    padding: 1.5rem;
+
+    cursor: pointer;
+    transition: ease-in-out;
+}
+
+button::before {
+    content: url(../images/icon-cart.svg);
+}
+
+button:hover {
+    background-color: var(--green-700);
+}
