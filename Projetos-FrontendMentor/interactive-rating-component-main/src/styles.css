@@ -1,0 +1,119 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* ### Primary */
+    --orange-500: hsl(25, 97%, 53%);
+
+    /* ### Neutral */
+
+    --white: hsl(0, 100%, 100%);
+    --grey-500: hsl(217, 12%, 63%);
+    --grey-900: hsl(213, 19%, 18%);
+    --grey-901: hsl(213, 19%, 10%);
+    --grey-950: hsl(216, 12%, 8%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-950);
+    font-family: "Overpass", sans-serif;
+    color: var(--white);
+}
+
+.container {
+    background-image: linear-gradient(180deg, var(--grey-900), var(--grey-901));
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 3rem;
+    border-radius: 3rem;
+    max-width: 40rem;
+    margin-bottom: 2rem;
+
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-900);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;   
+}
+
+.container-title-descripton {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.container-title-descripton h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.container-title-descripton p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--grey-500);
+}
+
+.container-feedback {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-900);
+    color: var(--grey-500);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.feedback:hover {
+    background-color: var(--grey-500);
+    color: var(--grey-950);
+}
+
+.feedback:active {
+    background-color: var(--orange-500);
+    color: var(--grey-950);
+}
+
+input {
+    background-color: var(--orange-500);
+    border: none;
+    border-radius: 3rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--grey-950);
+    cursor: pointer;
+}
