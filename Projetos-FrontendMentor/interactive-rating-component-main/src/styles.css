@@ -38,7 +38,7 @@ body {
     color: var(--white);
 }
 
-.container {
+.container{
     background-image: linear-gradient(180deg, var(--grey-900), var(--grey-901));
     display: flex;
     flex-direction: column;
@@ -75,6 +75,7 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--grey-500);
+    line-height: 170%;
 }
 
 .container-feedback {
@@ -98,16 +99,21 @@ body {
 }
 
 .feedback:hover {
-    background-color: var(--grey-500);
-    color: var(--grey-950);
-}
-
-.feedback:active {
     background-color: var(--orange-500);
     color: var(--grey-950);
 }
 
-input {
+.feedback:active {
+    background-color: var(--white);
+    color: var(--grey-950);
+}
+
+.feedback.ativo {
+    background-color: var(--white);
+    color: var(--grey-950);
+}
+
+button {
     background-color: var(--orange-500);
     border: none;
     border-radius: 3rem;
@@ -116,4 +122,35 @@ input {
     font-weight: 700;
     color: var(--grey-950);
     cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--white);
+}
+
+/*Feedback resultado*/
+.container-thank-you{
+    background-image: linear-gradient(180deg, var(--grey-900), var(--grey-901));
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    padding: 3rem;
+    border-radius: 3rem;
+    max-width: 40rem;
+    margin-bottom: 2rem;
+}
+
+.result-feedback {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--orange-500);
+    background-color: var(--grey-900);
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+.container-title-descripton {
+    text-align: center;
 }
