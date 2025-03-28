@@ -1,5 +1,4 @@
-//Criando o meu objeto pessoa
-
+// Criando o objeto pessoa
 function Person(foto, nome, area, texto) {
     this.foto = foto;
     this.nome = nome;
@@ -31,10 +30,46 @@ const camilaRocha = new Person(
     "UI/UX Designer", 
     "Camila se especializou em criar experiências digitais cativantes. Seu trabalho envolve pesquisa de usabilidade, design de interface e prototipação de alta fidelidade. Com um olhar atento aos detalhes, ela busca sempre unir estética e funcionalidade para otimizar a jornada do usuário.");
 
-const setas = document.querySelectorAll(".seta")
+// Array de pessoas
+const pessoas = [anaSouza, beatrizLima, eduardoRamos, camilaRocha];
+console.log(3%4);
+// Variável de índice
+let i = 0;
 
-setas.forEach(elem => {
+// Selecionando as setas
+const setas = document.querySelectorAll(".seta");
+
+window.addEventListener("load", () => {
+    const img = document.querySelector(".container-img");
+    const nome = document.querySelector("h2");
+    const area = document.querySelector("h3");
+    const texto = document.querySelector("p");
+
+    img.style.backgroundImage = `url(${pessoas[i].foto})`;
+    nome.innerHTML = pessoas[i].nome;
+    area.innerHTML = pessoas[i].area;
+    texto.innerHTML = pessoas[i].texto;
+});
+
+setas.forEach((elem, index) => {
     elem.addEventListener("click", () => {
-        
-    })
-})
+        const img = document.querySelector(".container-img");
+        const nome = document.querySelector("h2");
+        const area = document.querySelector("h3");
+        const texto = document.querySelector("p");
+
+        if (index === 1) {
+            // Avançar para a próxima pessoa
+            i = (i + 1) % pessoas.length; // Circular para o próximo
+        } else if (index === 0) {
+            // Voltar para a pessoa anterior
+            i = (i - 1 + pessoas.length) % pessoas.length; // Circular para o anterior
+        }
+
+        // Atualizando a exibição
+        img.style.backgroundImage = `url(${pessoas[i].foto})`;
+        nome.innerHTML = pessoas[i].nome;
+        area.innerHTML = pessoas[i].area;
+        texto.innerHTML = pessoas[i].texto;
+    });
+});
