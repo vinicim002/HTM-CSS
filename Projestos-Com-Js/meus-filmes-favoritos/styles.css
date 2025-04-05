@@ -25,6 +25,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     background-color: var(--bg-cinza-color);
+    padding-bottom: 4rem;
 }
 
 #nav {
@@ -88,19 +89,19 @@ input {
 }
 
 .lista {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto auto;
-    width: 90%;
+    padding: 0 14.4rem;
+
 }
 
+
+/* N tem como aplicar padding na table por isso a div list criada*/
 table {
     width: 100%;
-}
-
-table, th, td {
     border-collapse: collapse;
 }
 
@@ -127,13 +128,19 @@ th,td {
     color: var(--white-color);
 }
 
+
+/*estilo das linhas impares*/
 tbody tr:nth-child(even) {
     background-color: var(--cinza-tr2-color);
 }
 
+/*estilo das linhas pares*/
 tbody tr:nth-child(odd) {
     background-color: var(--cinza-tr1-color);
 }
 
+.typcn-delete {
+    cursor: pointer;
+}
 
 
