@@ -33,5 +33,6 @@
     }
 
     const inserirLinha = (tituloDoFilme, genero) => {
+        const tableBody = document.querySelector("tbody");
         
     }
