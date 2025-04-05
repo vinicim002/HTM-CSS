@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus filmes favoritos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="nav">
+        <h1>Meus filmes favoritos</h1>
+    </div>
+    
+    <div class="banner">
+    </div>
+
+    <form action="#">
+        <label for="inTitulo">Titulo do filme</label>
+        <input type="text" id="inTitulo" required>
+
+        <label for="inGenero">Genero</label>
+        <input type="text" id="inGenero" required>
+
+        <button type="submit" id="submit">Adicionar</button>
+    </form>
+
+    <div class="lista">
+        <table>
+            <thead>
+                <tr>
+                    <th>Titulo do filme</th>
+                    <th>Genero</th>
+                    <th>Acao</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Homem de Ferro</td>
+                    <td>Acao</td>
+                    <td><img src="img/typcn_delete.svg" alt=""></td>
+                </tr>
+                <tr>
+                    <td>Homem de Ferro2</td>
+                    <td>Acao</td>
+                    <td><img src="img/typcn_delete.svg" alt=""></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
