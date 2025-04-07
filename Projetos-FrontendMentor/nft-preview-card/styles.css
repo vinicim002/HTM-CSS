@@ -23,6 +23,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     background-color: hsl(217, 54%, 11%);
+    padding: 4rem;
 
     display: flex;
     flex-direction: column;
