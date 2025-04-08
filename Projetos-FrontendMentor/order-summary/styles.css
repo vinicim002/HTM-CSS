@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* ### Primary */
+
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+
+body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--paleBlue);
+    width: 100vw;
+    min-height: 100vh;
+
+    font-family: "Red Hat Display", sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 2rem;
+   background-color: white;
+   border-radius: 1.5rem;
+   margin-bottom: 2rem;
+   max-width: 40rem;
+   padding-bottom: 4rem;
+   box-shadow: 0px 12px 13px 0px hsl(245, 75%, 52%, 25%)
+}
+
+.img {
+    background-image: url("./images/illustration-hero.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5rem 1.5rem 0 0;
+    width: 100%;
+    aspect-ratio: 16 / 8;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    width: 100%;
+    padding: 0 4rem;
+}
+
+.titulo-descricao h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--darkBlue);
+    padding-bottom: 2rem;
+}
+
+.titulo-descricao p {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--desaturatedBlue);
+}
+
+.plano-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--veryPaleBlue);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.icon-music {
+    background-image: url("./images/icon-music.svg");
+    background-size: cover;
+    width: 4rem;
+    height: 4rem;
+}
+
+.plano h2{
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--darkBlue);
+    line-height: 160%;
+}
+
+.plano h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--darkBlue);
+    line-height: 160%;
+}
+
+.plano-info a {
+ font-size: 1.6rem;
+ font-weight: 900;
+ color: var(--brightBlue);
+}
+
+.plano-info a:hover {
+    color: hsla(245, 75%, 52%, 55%);
+    transition: ease-in 0.3s;
+   }
+
+.btn-principal {
+    background-color: var(--brightBlue);
+    border: none;
+    border-radius: 1rem;
+    box-shadow:  1px 10px 19px 3px hsl(245, 75%, 52%, 25%);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-principal:hover {
+    background-color: hsla(245, 75%, 52%, 55%);
+    transition: ease-in 0.3s;
+}
+
+.btn-secundario {
+    border: none;
+    background-color: transparent;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--desaturatedBlue);
+    cursor: pointer;
+}
+
+.btn-secundario:hover {
+    color: var(--darkBlue);
+    transition: ease-in 0.3s;
+}
