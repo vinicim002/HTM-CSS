@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* ### Primary */
+    --veryDarkBlue: hsl(233, 47%, 7%); /*(main background)*/
+    --darkDesaturatedBlue: hsl(244, 38%, 16%); /*(card background)*/
+    --SoftViolet: hsl(277, 64%, 61%); /*(accent)*/
+
+    /* ### Neutral */
+
+    --white: hsl(0, 0%, 100%); /*(main heading, stats)*/
+    --slightlyTransparentWhite1: hsla(0, 0%, 100%, 0.75); /*(main paragraph)*/
+    --slightlyTransparentWhite2: hsla(0, 0%, 100%, 0.6); /*(stat headings)*/
+}
+
+html { font-size: 62.5%;}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--veryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 100rem;
+    min-height: 40rem;
+    margin-bottom: 2rem;
+}
+
+#container-esquerda {
+    background-color: var(--darkDesaturatedBlue);
+    border-radius: 1rem 0 0 1rem;
+    width: 50%;
+    padding: 5rem 10rem 5rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 4rem;
+}
+
+.titulo-descricao {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.titulo-descricao h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.titulo-descricao span {
+    color: var(--SoftViolet);
+}
+
+.titulo-descricao p {
+    font-size: 1.5rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color: var(--slightlyTransparentWhite1);
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.numeros {
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.categoria {
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: var(--slightlyTransparentWhite2);
+}
+
+#container-direita {
+    background-image: url("./images/image-header-desktop.jpg");
+    background-color: hsla(277, 64%, 61%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply; 
+    border-radius: 0 1rem 1rem 0;
+    width: 50%;
+    aspect-ratio: 16/9;
+}
