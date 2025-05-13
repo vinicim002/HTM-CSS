@@ -1,69 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Kumbh Sans", sans-serif;
-    font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
 }
 
 :root {
-    /* ### Primary */
-    --dark-cyan: hsl(185, 75%, 39%);
-    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
-    --dark-grayish-blue: hsl(227, 10%, 46%);
+  /* ### Primary */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
 
-    /* ### Neutral */
-    --dark-gray: hsl(0, 0%, 59%);
+  /* ### Neutral */
+  --dark-gray: hsl(0, 0%, 59%);
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 
-    background-color: var(--dark-cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-cyan);
 }
 
-.card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.main {
+  position: relative;
+  width: 40rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 80px rgba(0, 0, 0, 0.384);
 
-    background-color: white;
-    border-radius: 1rem;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.50);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 
-    margin-bottom: 2rem;
+  z-index: 1;
 }
 
+.container-bg-pattern-card {
+  width: 100%;
+}
 
-.bg-pattern-card img{
-    border-radius: 1rem 1rem 0 0;
+.container-bg-pattern-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.foto-perfil {
+  width: 9rem;
+  height: 9rem;
+  display: block;
+  border-radius: 50%;
+  border: 0.5rem solid white;
+  object-fit: cover;
+
+  position: absolute;
+  top: 12rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .info-pessoal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+
+  margin-top: 6rem;
+
+}
+
+.info-nome-idade {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.info-nome-idade h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.info-nome-idade p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+}
+
+.info-pessoal p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+}
+
+hr { 
+    border: none;
+    width: 100%;
+    height: 0.2rem;
+    background-color: hsla(0, 0%, 59%, 0.356);
+    margin: 2rem 0;
+}
+
+.status-perfil {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.statu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.info {
-    display: flex;
-    flex-direction: row;
+.statu h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--very-dark-desaturated-blue);
 }
 
-.status-card {
-    display: flex;
-    flex-direction: row;
+.statu p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--very-dark-desaturated-blue);
 }
 
 
@@ -83,5 +163,29 @@ body {
 
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+.bg-pattern-top,
+.bg-pattern-bottom {
+  position: absolute;
+  z-index: 0;
+}
+
+.bg-pattern-top {
+  top: -50%;
+  left: -10%;
+}
+
+.bg-pattern-bottom {
+  bottom: -50%;
+  right: -10%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
